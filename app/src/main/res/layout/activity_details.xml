@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zhangyanran20181031.bwie.com.movie.activity.Details">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3086BE">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="影片详情"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/kind_liner" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_height="200dp">
+
+
+        <ImageView
+            android:id="@+id/xiang_gao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:id="@+id/simpleDraweeView" />
+
+            <TextView
+                android:id="@+id/details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/simpleDraweeView"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/simpleDraweeView"
+                android:text="name" />
+            <TextView
+                android:id="@+id/details_leixing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/simpleDraweeView"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@+id/simpleDraweeView"
+                android:text="XXXX" />
+            <TextView
+                android:id="@+id/details_pianchang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/simpleDraweeView"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="83dp"
+                android:layout_toEndOf="@+id/simpleDraweeView"
+                android:text="XXXX" />
+
+            <TextView
+                android:id="@+id/details_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/details_pianchang"
+                android:layout_centerVertical="true"
+                android:text="XXXX" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
